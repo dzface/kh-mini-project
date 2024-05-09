@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useCallback, useEffect, useState } from 'react';
+import ManyRendering from './ManyRendering';
 
+// 리랜더링 발생조건
+// state 변경
+// props 변경
 function App() {
+  const[state, setState] =useState("");
+  const onClick = ()=>{};
+  const memoizationCallback = useCallback(()=>{
+    onClick();
+  },[]);
+// 리액트는 랜더링 과정에서 2가지 페이즈를 거친다.
+// 1. render phase; vitual DOM을 만들고, 실제 DOM 과 비교해서 업데이트가 필요한 부분을 찾음
+// 2. commit phase: 
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setState(1);
+      console.log("updated");
+    },1000);
+  },[]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <ManyRendering onClick={memoizationCallback}/>
+    </>
   );
 }
 
