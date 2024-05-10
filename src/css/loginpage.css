@@ -15,26 +15,29 @@
   justify-content: center; /* 수직 가운데 정렬 */
   align-items: center; /* 수평 가운데 정렬 */
   text-align: center;
-  border-radius:5dvh;
-  background-color: rgba(0, 0, 0, 0.3);
-
+  border-radius:10px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .box div {
   width: 100px;
   height: 20px;
+  font-family: 'GmarketSansMedium';
   color: beige;
   font-size: 10px;
   border-radius: 2dvi;
-  background-color: black;
   opacity: 0.5;
 }
 .loginSub{
   font-size: 10px;
   color: white;
+  margin: 0
 }
 input[type="email"],
 input[type="password"] {
+  border-width: 0 0 1px;
+  border-color: white;
+  background-color: unset;
   margin-bottom: 10px; /* 원하는 마진 값으로 설정 */
 }
 .image-item{
@@ -50,12 +53,29 @@ input[type="password"] {
 }
 p{
   display: flex;
-  justify-self:center;
+  justify-content:left;
   align-items: center;
-  margin: 5px;
 }
-
+.caution{
+  display:hidden;
+  font-size: 10px;
+  color:orangered;
+}
+.loginSub{
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  margin: 10px 0;
+}
+.loginSub a{
+  margin-left: 20px;
+}
 a{
   color: inherit;
-  text-decoration-line:none
+  text-decoration-line:none;
 }
+.finalCheck{
+  background-color: black;
+
+}
+

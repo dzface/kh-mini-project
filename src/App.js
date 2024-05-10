@@ -1,5 +1,5 @@
 import Loginpage from "./Login-component";
-
+import SignupPage from "./Sighup-component";
 function App() {
   
   return (

@@ -1,0 +1,33 @@
+.container {
+  width: 1024px;
+  display: flex; /* 부모 요소를 flex container로 설정 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  margin: 0 auto;
+  background-color: white;
+}
+
+.box {
+  width: 300px;
+  height: 400px;
+  display: flex; /* 자식 요소들을 flex container로 설정 */
+  flex-direction: column; /* 자식 요소들을 세로 방향으로 배열 */
+  justify-content: center; /* 수직 가운데 정렬 */
+  align-items: center; /* 수평 가운데 정렬 */
+  text-align: center;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.box input {
+  width: 200px;
+  height: 20px;
+  border-width: none;
+  border-width: 0;
+  caret-color: transparent;
+  background-color: rgba(0, 0, 0,0.1);
+  margin: 5px 10px; /* 원하는 마진 값으로 설정 */
+}
+li {
+  list-style: none;
+
+}
