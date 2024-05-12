@@ -19,8 +19,8 @@
   border-radius: 10px;
 }
 .imageItem {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background-image: url("../image/findglass.png");
   background-repeat: no-repeat;
   background-size: contain;
