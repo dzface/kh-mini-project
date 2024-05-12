@@ -1,5 +1,4 @@
 import styles from "../css/FindIDPage.module.css";
-import "../css/GlobalButton.css";
 import BackButton from "./BackButton";
 const FindPWPage = () => {
   return (
