@@ -6,18 +6,18 @@ import styles from "./css/loginpage.module.css";
 const Loginpage = () => {
   return (
     <>
-      <div className="container">
-        <div className="box">
-          <p className="image-item"></p>
+      <div className={styles.container}>
+        <div className={styles.box}>
+          <p className={styles.imageItem}></p>
           <input type="email" placeholder="📧   Email" />
           <input type="password" placeholder="🔑   Password" />
-          <div className="caution" onChange={() => {}}></div>
-          <p className="loginSub">
+          <div className={styles.caution}></div>
+          <p className={styles.loginsub}>
             <a href="">Sign up</a>
             <a href="">Find ID /</a>
             <a href="">Password</a>
           </p>
-          <div className="finalCheck">Login</div>
+          <div className={styles.finalCheck}>Login</div>
         </div>
       </div>
     </>
