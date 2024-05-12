@@ -1,5 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import LoginPage from "./components/LoginPage";
 import SignupPage from "./components/SighupPage";
 import FindIDPage from "./components/FindIDPage";

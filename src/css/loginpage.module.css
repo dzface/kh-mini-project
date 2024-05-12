@@ -47,10 +47,14 @@ p {
   text-decoration: none; /* 링크의 밑줄 제거 */
   color: inherit; /* 링크의 색상 제거 */
 }
+.loginsub a:nth-child(1){
+  margin-right: 50px;
+}
 .finalCheck {
   width: 100px;
   height: 20px;
   color: beige;
   font-size: 10px;
   background-color: aqua;
+  margin-top: 30px;
 }
