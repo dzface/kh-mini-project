@@ -1,10 +1,11 @@
 import styles from "../css/SignupPage.module.css";
-
+import "../css/GlobalButton.css";
 const SignupPage = () => {
   return (
     <>
       <div className={styles.container}>
         <div className={styles.box}>
+          <p className="backBtn"></p>
           <p>회원가입</p>
           <input type="text" placeholder="이메일"/>
           <input type="text" placeholder="비밀번호"/>

@@ -38,10 +38,14 @@ p {
   align-items: center;
   margin: 5px;
 }
-.caution{
+.caution {
   font-size: 15px;
-  position:relative;
+  position: relative;
   min-height: 30px;
+}
+.loginsub a{
+  text-decoration: none; /* 링크의 밑줄 제거 */
+  color: inherit; /* 링크의 색상 제거 */
 }
 .finalCheck {
   width: 100px;

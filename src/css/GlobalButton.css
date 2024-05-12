@@ -1,0 +1,9 @@
+.backBtn {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin: 0 250px 350px 0;
+  
+  background-image: url("../image/backicon.png");
+  background-size: contain;
+}

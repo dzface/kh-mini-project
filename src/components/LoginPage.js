@@ -45,9 +45,9 @@ const LoginPage = () => {
           {caution}
         </div>
         <p className={styles.loginsub}>
-          <a href="">Sign up</a>
-          <a href="">Find ID /</a>
-          <a href="">Password</a>
+          <a href="http://localhost:3000/signup">Sign up</a>
+          <a href="http://localhost:3000/findid">Find ID /</a>
+          <a href="http://localhost:3000/findpw">Password</a>
         </p>
         <div
           className={styles.finalCheck}

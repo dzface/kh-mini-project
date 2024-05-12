@@ -19,7 +19,7 @@
   border-radius: 10px;
 }
 
-input:not(:nth-child(9)) {
+.box input:not(:nth-child(7)) {
   color: white;
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
