@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import styles from "./css/loginpage.module.css";
+import styles from "../css/LoginPage.module.css";
 
-const Loginpage = () => {
+const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [caution, setCaution] = useState("");
@@ -61,4 +61,4 @@ const Loginpage = () => {
   );
 };
 
-export default Loginpage;
+export default LoginPage;
