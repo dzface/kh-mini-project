@@ -5,7 +5,10 @@ import styles from "../css/GlobalButton.module.css";
 const BackButton = () => {
   const navigate = useNavigate();
   return (
-    <p className={styles.backButton} onClick={()=>navigate(-1)}></p>   // 뒤로 가기
+    // 뒤로 가기
+    <p className={styles.backButton} onClick={()=>navigate(-1)}>
+      <span className={styles.underLine}></span>
+    </p>   
   );
 };
 
