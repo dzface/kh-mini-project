@@ -44,11 +44,15 @@ p {
   min-height: 30px;
 }
 .loginsub a{
+  font-size: 15px;
   text-decoration: none; /* 링크의 밑줄 제거 */
   color: inherit; /* 링크의 색상 제거 */
 }
 .loginsub a:nth-child(1){
-  margin-right: 50px;
+  margin-right: 40px;
+}
+.loginsub a:nth-child(2){
+  margin-right: 10px;
 }
 .finalCheck {
   width: 100px;
