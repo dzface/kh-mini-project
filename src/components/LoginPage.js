@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "../css/LoginPage.module.css";
-
+import Background from "../background/Background";
+import Header from "../background/Header";
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -26,38 +27,43 @@ const LoginPage = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.box}>
-        <p className={styles.imageItem}></p>
-        <input
-          type="email"
-          placeholder="📧   Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="🔑   Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <div id="caution" className={styles.caution}>
-          {caution}
-        </div>
-        <p className={styles.loginsub}>
-          <a href="http://localhost:3000/signup">Sign up</a>
-          <a href="http://localhost:3000/findid">Find ID </a>
-          <a href="http://localhost:3000/findpw">/ Password</a>
-        </p>
-        <div
-          className={styles.finalCheck}
-          onClick={handleLogin}
-          style={{ cursor: caution === "확인되었습니다." ? "pointer" : "not-allowed" }}
-        >
-          Login
+    <Background>
+      <Header />
+      <div className={styles.container}>
+        <div className={styles.box}>
+          <p className={styles.imageItem}></p>
+          <input
+            type="email"
+            placeholder="📧   Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="🔑   Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <div id="caution" className={styles.caution}>
+            {caution}
+          </div>
+          <p className={styles.loginsub}>
+            <a href="http://localhost:3000/signup">Sign up</a>
+            <a href="http://localhost:3000/findid">Find ID </a>
+            <a href="http://localhost:3000/findpw">/ Password</a>
+          </p>
+          <div
+            className={styles.finalCheck}
+            onClick={handleLogin}
+            style={{
+              cursor: caution === "확인되었습니다." ? "pointer" : "not-allowed",
+            }}
+          >
+            Login
+          </div>
         </div>
       </div>
-    </div>
+    </Background>
   );
 };
 

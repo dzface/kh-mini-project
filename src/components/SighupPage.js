@@ -1,9 +1,12 @@
 import styles from "../css/SignupPage.module.css";
 import BackButton from "./BackButton";
+import Background from "../background/Background";
+import Header from "../background/Header";
 const SignupPage = () => {
 
   return (
-    <>
+    <Background>
+      <Header/>
       <div className={styles.container}>
         <div className={styles.box}>
           <BackButton/>
@@ -19,7 +22,7 @@ const SignupPage = () => {
           <div className={styles.finalCheck}>가입</div>
         </div>
       </div>
-    </>
+      </Background>
   );
 };
 export default SignupPage;

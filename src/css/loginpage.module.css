@@ -1,21 +1,19 @@
 .container {
-  width: 1024px;
+  width: 500px;
   display: flex; /* 부모 요소를 flex container로 설정 */
   justify-content: center; /* 수평 가운데 정렬 */
   align-items: center; /* 수직 가운데 정렬 */
   margin: 0 auto;
-  background-color: rgb(255, 255, 255);
 }
 
 .box {
-  width: 300px;
-  height: 400px;
+  width: 500px;
+  height: 600px;
   display: flex; /* 자식 요소들을 flex container로 설정 */
   flex-direction: column; /* 자식 요소들을 세로 방향으로 배열 */
   justify-content: center; /* 수직 가운데 정렬 */
   align-items: center; /* 수평 가운데 정렬 */
   text-align: center;
-  border: 1px solid;
   background: conic-gradient(
     rgba(82, 1, 32, 0.6) 0%,
     rgba(150, 43, 9, 0.6) 20%,
