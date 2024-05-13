@@ -15,8 +15,18 @@
   justify-content: center; /* 수직 가운데 정렬 */
   align-items: center; /* 수평 가운데 정렬 */
   text-align: center;
-  border: 1px solid;
   border-radius: 10px;
+  background: conic-gradient(
+    rgba(82, 1, 32, 0.6) 0%,
+    rgba(150, 43, 9, 0.6) 20%,
+    rgba(181, 113, 20, 0.6) 40%,
+    rgba(8, 64, 62, 0.6) 60%,
+    rgba(112, 101, 19, 0.6) 80%,
+    rgba(82, 1, 32, 0.6) 100%
+  );
+}
+.title{
+  color: white;
 }
 .imageItem {
   width: 90px;
@@ -26,11 +36,13 @@
   background-size: contain;
   margin: 20px 0;
 }
-.box input:not(:nth-child(1)) {
+.box input{
+  height: 20px;
+  line-height: 20px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 5px 0 5px 10px ;
   margin-bottom: 15px; /* 원하는 마진 값으로 설정 */
 }
@@ -38,4 +50,14 @@
   font-size: 15px;
   position: relative;
   min-height: 30px;
+}
+.finalCheck {
+  width: 150px;
+  height: 40px;
+  text-align: justify; /* 텍스트 가운데 정렬 */
+  line-height: 40px; /*텍스트 상하정렬*/
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
 }

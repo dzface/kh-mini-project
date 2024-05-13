@@ -17,19 +17,36 @@
   text-align: center;
   border: 1px solid;
   border-radius: 10px;
+  background: conic-gradient(
+    rgba(82, 1, 32, 0.6) 0%,
+    rgba(150, 43, 9, 0.6) 20%,
+    rgba(181, 113, 20, 0.6) 40%,
+    rgba(8, 64, 62, 0.6) 60%,
+    rgba(112, 101, 19, 0.6) 80%,
+    rgba(82, 1, 32, 0.6) 100%
+  );
 }
-
-.box input:not(:nth-child(7)) {
+.title{
   color: white;
-  background-color: rgba(0, 0, 0, 0.1);
+}
+input {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.4);
   border: none;
   border-radius: 10px;
-  padding: 5px 0 5px 10px ;
+  padding: 5px 0 5px 10px;
   margin-bottom: 15px; /* 원하는 마진 값으로 설정 */
 }
 .caution {
   font-size: 15px;
   position: relative;
-  min-height: 30px;
 }
-
+.finalCheck {
+  width: 150px;
+  height: 40px;
+  line-height: 40px; /*텍스트 상하정렬*/
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
