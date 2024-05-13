@@ -1,21 +1,19 @@
 .container {
-  width: 1024px;
+  width: 500px;
   display: flex; /* 부모 요소를 flex container로 설정 */
   justify-content: center; /* 수평 가운데 정렬 */
   align-items: center; /* 수직 가운데 정렬 */
   margin: 0 auto;
-  background-color: rgb(255, 255, 255);
 }
 
 .box {
-  width: 300px;
-  height: 400px;
+  width: 500px;
+  height: 600px;
   display: flex; /* 자식 요소들을 flex container로 설정 */
   flex-direction: column; /* 자식 요소들을 세로 방향으로 배열 */
   justify-content: center; /* 수직 가운데 정렬 */
   align-items: center; /* 수평 가운데 정렬 */
   text-align: center;
-  border-radius: 10px;
   background: conic-gradient(
     rgba(82, 1, 32, 0.6) 0%,
     rgba(150, 43, 9, 0.6) 20%,
@@ -24,28 +22,31 @@
     rgba(112, 101, 19, 0.6) 80%,
     rgba(82, 1, 32, 0.6) 100%
   );
+  border-radius: 10px;
 }
 .title{
   color: white;
 }
 .imageItem {
-  width: 90px;
-  height: 90px;
+  width: 150px;
+  height: 150px;
   background-image: url("../image/findglass.png");
   background-repeat: no-repeat;
   background-size: contain;
   margin: 20px 0;
 }
 .box input{
-  height: 20px;
+  width: 200px;
+  height: 30px;
   line-height: 20px;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 5px 0 5px 10px ;
   margin-bottom: 15px; /* 원하는 마진 값으로 설정 */
 }
+
 .caution {
   font-size: 15px;
   position: relative;
