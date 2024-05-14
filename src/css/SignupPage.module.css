@@ -40,6 +40,8 @@ input {
   margin-bottom: 20px; /* 원하는 마진 값으로 설정 */
 }
 input::placeholder {
+  height: 20px;
+  line-height: 20px;
   color: rgb(250, 250, 250);
   font-style: inherit;
   padding-left: 5%;
@@ -62,6 +64,7 @@ input::placeholder {
   .title{font-size: 20px; margin-bottom: 10px;}
   .imageItem {width: 100px; height: 100px;}
   input { width: 180px; height: 20px; margin-bottom: 10px;}
+  input::placeholder{  font-size: 15px;}
   .caution, .loginsub a {font-size: 10px;}
   .finalCheck{width: 150px; height: 30px; line-height: 30px; font-size: 15px;}
 }
