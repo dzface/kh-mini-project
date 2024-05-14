@@ -15,7 +15,7 @@ const FindPWPage = () => {
           <input type="text" placeholder="이름" />
           <input type="text" placeholder="주민등록번호" />
           <p></p>
-          <p className={styles.finalCheck}>찾기</p>
+          <div className={styles.finalCheck}>찾기</div>
         </div>
       </div>
     </Background>

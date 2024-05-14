@@ -25,7 +25,9 @@
   border-radius: 10px;
 }
 .title{
+  font-size: 30px;
   color: white;
+  margin-bottom: 20px;
 }
 .imageItem {
   width: 150px;
@@ -35,7 +37,7 @@
   background-size: contain;
   margin: 20px 0;
 }
-.box input{
+input{
   width: 200px;
   height: 30px;
   line-height: 20px;
@@ -44,7 +46,7 @@
   border: none;
   border-radius: 20px;
   padding: 5px 0 5px 10px ;
-  margin-bottom: 15px; /* 원하는 마진 값으로 설정 */
+  margin-bottom: 20px; /* 원하는 마진 값으로 설정 */
 }
 
 .caution {
@@ -55,10 +57,18 @@
 .finalCheck {
   width: 150px;
   height: 40px;
-  text-align: justify; /* 텍스트 가운데 정렬 */
+  text-align: center; /* 텍스트 가운데 정렬 */
   line-height: 40px; /*텍스트 상하정렬*/
-  font-size: 15px;
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
+  border-radius: 20px;
+}
+@media (max-width:700px){
+  .box {width: 300px; height: 400px;}
+  .title{font-size: 20px; margin-bottom: 10px;}
+  .imageItem {width: 100px; height: 100px;}
+  input { width: 180px; height: 20px; margin-bottom: 10px;}
+  .caution, .loginsub a {font-size: 10px;}
+  .finalCheck{width: 150px; height: 30px; line-height: 30px; font-size: 15px; text-align: center;}
 }
