@@ -33,7 +33,7 @@ input {
   width: 250px;
   height: 30px;
   color: rgba(255, 255, 255, 0.9);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   border: none;
   border-radius: 20px;
   padding: 5px 0 5px 10px;
@@ -54,7 +54,7 @@ input::placeholder {
   line-height: 50px; /*텍스트 상하정렬*/
   font-size: 20px;
   color: rgba(255, 255, 255, 0.9);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 20px;
 }
 @media (max-width:700px){
